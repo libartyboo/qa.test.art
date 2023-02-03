@@ -1,19 +1,19 @@
-name: Run python script
+# name: Run python script
 
-on:
-   schedule:
+# on:
+#    schedule:
 #      - cron: "*/10 * * * *"    #runs every 10 minutes
-     - cron: "* * 31 2 *"      #never run
+#      - cron: "* * 31 2 *"      #never run
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - name: execute py script # run file
-      run: python my_file.py
+#     # Steps represent a sequence of tasks that will be executed as part of the job
+#     steps:
+#     - uses: actions/checkout@v3
+#     - uses: actions/setup-python@v4
+#       with:
+#         python-version: '3.x'
+#     - name: execute py script # run file
+#       run: python my_file.py
