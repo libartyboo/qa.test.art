@@ -1,8 +1,9 @@
 name: Run python script
 
 on:
-  schedule:
-    - cron: "*/10 * * * *"    #runs every 10 minutes
+   schedule:
+#      - cron: "*/10 * * * *"    #runs every 10 minutes
+     - cron: "* * 31 2 *"      #never run
 
 jobs:
   build:
